@@ -1,6 +1,6 @@
 import { QBtn as B, QSelect as M, QBadge as k, QBanner as h, QIcon as C, QInput as z, Quasar as Q } from "quasar";
-import { defineComponent as c, computed as p, resolveComponent as f, openBlock as u, createBlock as y, normalizeClass as g, withCtx as s, renderSlot as r, createTextVNode as b, toDisplayString as $, createSlots as S, createVNode as V, createElementBlock as v, Fragment as I, renderList as T, normalizeStyle as q } from "vue";
-const N = c({
+import { defineComponent as f, computed as p, resolveComponent as c, openBlock as d, createBlock as y, normalizeClass as g, withCtx as s, renderSlot as r, createTextVNode as b, toDisplayString as $, createSlots as S, createVNode as I, createElementBlock as v, Fragment as V, renderList as T, normalizeStyle as q } from "vue";
+const N = f({
   name: "MyButton",
   components: { QBtn: B },
   props: {
@@ -80,8 +80,8 @@ const N = c({
   return a;
 };
 function w(e, o, a, t, i, l) {
-  const n = f("q-btn");
-  return u(), y(n, {
+  const n = c("q-btn");
+  return d(), y(n, {
     label: e.label,
     color: e.mapVariantToQuasar,
     flat: e.variant === "text",
@@ -96,7 +96,7 @@ function w(e, o, a, t, i, l) {
       `my-button--${e.size}`,
       e.className
     ]]),
-    onClick: o[0] || (o[0] = (d) => e.onClick(d))
+    onClick: o[0] || (o[0] = (u) => e.onClick(u))
   }, {
     default: s(() => [
       r(e.$slots, "startIcon", {}, void 0, !0),
@@ -108,7 +108,7 @@ function w(e, o, a, t, i, l) {
     _: 3
   }, 8, ["label", "color", "flat", "outline", "size", "icon", "icon-right", "loading", "disabled", "class"]);
 }
-const F = /* @__PURE__ */ m(N, [["render", w], ["__scopeId", "data-v-f1803702"]]), A = c({
+const F = /* @__PURE__ */ m(N, [["render", w], ["__scopeId", "data-v-f1803702"]]), A = f({
   name: "MySelect",
   components: { QSelect: M },
   props: {
@@ -183,13 +183,9 @@ const F = /* @__PURE__ */ m(N, [["render", w], ["__scopeId", "data-v-f1803702"]]
   }
 });
 function L(e, o, a, t, i, l) {
-  const n = f("q-select");
-  return u(), y(n, {
+  const n = c("q-select");
+  return d(), y(n, {
     modelValue: e.modelValue,
-    "onUpdate:modelValue": [
-      o[0] || (o[0] = (d) => e.modelValue = d),
-      e.onSelect
-    ],
     options: e.options,
     label: e.label,
     color: e.mapColorToQuasar,
@@ -202,7 +198,8 @@ function L(e, o, a, t, i, l) {
       `my-select--${e.variant}`,
       `my-select--${e.size}`,
       e.className
-    ]])
+    ]]),
+    "onUpdate:modelValue": e.onSelect
   }, S({ _: 2 }, [
     e.$slots.prepend ? {
       name: "prepend",
@@ -220,7 +217,7 @@ function L(e, o, a, t, i, l) {
     } : void 0
   ]), 1032, ["modelValue", "options", "label", "color", "outlined", "borderless", "size", "disable", "loading", "class", "onUpdate:modelValue"]);
 }
-const O = /* @__PURE__ */ m(A, [["render", L], ["__scopeId", "data-v-4901f43d"]]), U = c({
+const O = /* @__PURE__ */ m(A, [["render", L], ["__scopeId", "data-v-663659fa"]]), U = f({
   name: "MyBadge",
   components: { QBadge: k },
   props: {
@@ -272,8 +269,8 @@ const O = /* @__PURE__ */ m(A, [["render", L], ["__scopeId", "data-v-4901f43d"]]
   }
 });
 function W(e, o, a, t, i, l) {
-  const n = f("q-badge");
-  return u(), y(n, {
+  const n = c("q-badge");
+  return d(), y(n, {
     color: e.mapColorToQuasar,
     floating: e.floating,
     rounded: e.rounded,
@@ -291,7 +288,7 @@ function W(e, o, a, t, i, l) {
     _: 3
   }, 8, ["color", "floating", "rounded", "outline", "class"]);
 }
-const j = /* @__PURE__ */ m(U, [["render", W], ["__scopeId", "data-v-053c7116"]]), D = c({
+const j = /* @__PURE__ */ m(U, [["render", W], ["__scopeId", "data-v-053c7116"]]), D = f({
   name: "MyBanner",
   components: { QBanner: h, QIcon: C },
   props: {
@@ -338,8 +335,8 @@ const j = /* @__PURE__ */ m(U, [["render", W], ["__scopeId", "data-v-053c7116"]]
   }
 });
 function E(e, o, a, t, i, l) {
-  const n = f("q-icon"), d = f("q-banner");
-  return u(), y(d, {
+  const n = c("q-icon"), u = c("q-banner");
+  return d(), y(u, {
     class: g([
       "my-banner",
       `my-banner--${e.variant}`,
@@ -359,7 +356,7 @@ function E(e, o, a, t, i, l) {
     e.icon ? {
       name: "avatar",
       fn: s(() => [
-        V(n, {
+        I(n, {
           name: e.icon,
           color: e.mapColorToQuasar
         }, null, 8, ["name", "color"])
@@ -375,7 +372,7 @@ function E(e, o, a, t, i, l) {
     } : void 0
   ]), 1032, ["class", "rounded", "dense", "inline-actions"]);
 }
-const G = /* @__PURE__ */ m(D, [["render", E], ["__scopeId", "data-v-4b3b4eee"]]), H = c({
+const G = /* @__PURE__ */ m(D, [["render", E], ["__scopeId", "data-v-4b3b4eee"]]), H = f({
   name: "MySkeleton",
   props: {
     lines: {
@@ -400,22 +397,22 @@ const G = /* @__PURE__ */ m(D, [["render", E], ["__scopeId", "data-v-4b3b4eee"]]
   }
 });
 function J(e, o, a, t, i, l) {
-  return u(), v("div", {
+  return d(), v("div", {
     class: g([
       "skeleton-loader",
       e.className
     ])
   }, [
-    (u(!0), v(I, null, T(e.lines, (n, d) => (u(), v("div", {
-      key: d,
+    (d(!0), v(V, null, T(e.lines, (n, u) => (d(), v("div", {
+      key: u,
       class: "skeleton-line",
       style: q({
-        width: e.getLineWidth(d)
+        width: e.getLineWidth(u)
       })
     }, null, 4))), 128))
   ], 2);
 }
-const K = /* @__PURE__ */ m(H, [["render", J], ["__scopeId", "data-v-6d55602e"]]), P = c({
+const K = /* @__PURE__ */ m(H, [["render", J], ["__scopeId", "data-v-6d55602e"]]), P = f({
   name: "MyInputText",
   components: {
     QInput: z
@@ -490,8 +487,8 @@ const K = /* @__PURE__ */ m(H, [["render", J], ["__scopeId", "data-v-6d55602e"]]
   }
 });
 function R(e, o, a, t, i, l) {
-  const n = f("q-input");
-  return u(), y(n, {
+  const n = c("q-input");
+  return d(), y(n, {
     "model-value": e.modelValue,
     label: e.label,
     placeholder: e.placeholder,

@@ -589,7 +589,7 @@ default: string;
 }>, {
 mapColorToQuasar: ComputedRef<string>;
 mapSizeToQuasar: ComputedRef<string>;
-onSelect: (value: any) => void;
+onSelect: (value: unknown) => void;
 }, {}, {}, {}, ComponentOptionsMixin, ComponentOptionsMixin, ("update:modelValue" | "change")[], "update:modelValue" | "change", PublicProps, Readonly<ExtractPropTypes<    {
 modelValue: {
 type: (StringConstructor | ObjectConstructor | NumberConstructor | ArrayConstructor)[];

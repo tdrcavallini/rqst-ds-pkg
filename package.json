@@ -1,0 +1,14 @@
+{
+  "name": "rqst-ds-pkg",
+  "main": "dist/rqst-design-system.umd.js",
+  "module": "dist/rqst-design-system.es.js",
+  "types": "dist/index.d.ts",
+  "style": "dist/rqst-design-system.css",
+  "exports": {
+    ".": {
+      "import": "./dist/rqst-design-system.es.js",
+      "require": "./dist/rqst-design-system.umd.js"
+    },
+    "./dist/style.css": "./dist/rqst-design-system.css"
+  }
+}

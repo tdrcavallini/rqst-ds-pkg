@@ -288,7 +288,7 @@ function W(e, o, a, t, i, l) {
     _: 3
   }, 8, ["color", "floating", "rounded", "outline", "class"]);
 }
-const j = /* @__PURE__ */ m(U, [["render", W], ["__scopeId", "data-v-053c7116"]]), D = f({
+const j = /* @__PURE__ */ m(U, [["render", W], ["__scopeId", "data-v-8f733c7a"]]), D = f({
   name: "MyBanner",
   components: { QBanner: h, QIcon: C },
   props: {
@@ -372,7 +372,7 @@ function E(e, o, a, t, i, l) {
     } : void 0
   ]), 1032, ["class", "rounded", "dense", "inline-actions"]);
 }
-const G = /* @__PURE__ */ m(D, [["render", E], ["__scopeId", "data-v-4b3b4eee"]]), H = f({
+const G = /* @__PURE__ */ m(D, [["render", E], ["__scopeId", "data-v-a1ab4a55"]]), H = f({
   name: "MySkeleton",
   props: {
     lines: {

@@ -1,18 +1,26 @@
 {
-    "name": "rqst-ds-pkg",
-    "main": "dist/rqst-design-system.umd.js",
-    "module": "dist/rqst-design-system.es.js",
-    "types": "dist/index.d.ts",
-    "style": "dist/rqst-design-system.css",
-    "exports": {
-      ".": {
-        "import": "./dist/rqst-design-system.es.js",
-        "require": "./dist/rqst-design-system.umd.js"
-      },
-      "./dist/style.css": "./dist/rqst-design-system.css"
+  "name": "rqst-ds-pkg",
+  "version": "1.0.0",
+  "main": "rqst-design-system.umd.js",
+  "module": "rqst-design-system.es.js",
+  "types": "index.d.ts",
+  "style": "rqst-design-system.css",
+  "exports": {
+    ".": {
+      "import": "./rqst-design-system.es.js",
+      "require": "./rqst-design-system.umd.js"
     },
-    "peerDependencies": {
-        "quasar": "^2.17.0",
-        "vue": "^3.5.13"
-    }
-  }
+    "./style.css": "./rqst-design-system.css"
+  },
+  "peerDependencies": {
+    "quasar": "^2.17.0",
+    "vue": "^3.5.13"
+  },
+  "keywords": [
+    "vue",
+    "quasar",
+    "design-system"
+  ],
+  "author": "tdrcavallini",
+  "license": "MIT"
+}

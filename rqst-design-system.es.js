@@ -372,7 +372,7 @@ function E(e, o, a, t, i, l) {
     } : void 0
   ]), 1032, ["class", "rounded", "dense", "inline-actions"]);
 }
-const G = /* @__PURE__ */ m(D, [["render", E], ["__scopeId", "data-v-a1ab4a55"]]), H = f({
+const G = /* @__PURE__ */ m(D, [["render", E], ["__scopeId", "data-v-5a892ed7"]]), H = f({
   name: "MySkeleton",
   props: {
     lines: {

@@ -24,9 +24,15 @@ export declare type BannerVariant = 'info' | 'success' | 'warning' | 'error';
 
 export declare type ButtonColor = 'primary' | 'secondary' | 'success' | 'error' | 'warning' | 'info';
 
+declare type ButtonColor_2 = 'primary' | 'secondary' | 'success' | 'error' | 'warning' | 'info';
+
 export declare type ButtonSize = 'small' | 'medium' | 'large';
 
+declare type ButtonSize_2 = 'small' | 'medium' | 'large';
+
 export declare type ButtonVariant = 'solid' | 'outlined' | 'text';
+
+declare type ButtonVariant_2 = 'solid' | 'outlined' | 'text';
 
 declare const _default: {
     install: (app: App) => void;
@@ -221,6 +227,7 @@ default: string;
 mapVariantToQuasar: ComputedRef<string>;
 mapSizeToQuasar: ComputedRef<string>;
 onClick: (event: MouseEvent) => void;
+useLabelInsteadOfSlot: ComputedRef<boolean>;
 }, {}, {}, {}, ComponentOptionsMixin, ComponentOptionsMixin, "click"[], "click", PublicProps, Readonly<ExtractPropTypes<    {
 label: {
 type: StringConstructor;
@@ -408,6 +415,7 @@ default: string;
 mapVariantToQuasar: ComputedRef<string>;
 mapSizeToQuasar: ComputedRef<string>;
 onClick: (event: MouseEvent) => void;
+useLabelInsteadOfSlot: ComputedRef<boolean>;
 }, {}, {}, {}, ComponentOptionsMixin, ComponentOptionsMixin, "click"[], "click", PublicProps, Readonly<ExtractPropTypes<    {
 label: {
 type: StringConstructor;
@@ -463,6 +471,199 @@ className: string;
 }, {}, {
 QBtn: ComponentConstructor<QBtn>;
 }, {}, string, ComponentProvideOptions, true, {}, any>;
+}, {}, string, ComponentProvideOptions, true, {}, any>;
+
+export declare const MyCardVuetify: DefineComponent<ExtractPropTypes<    {
+imageUrl: {
+type: StringConstructor;
+default: string;
+};
+imageAlt: {
+type: StringConstructor;
+default: string;
+};
+date: {
+type: (StringConstructor | DateConstructor)[];
+default: null;
+};
+title: {
+type: StringConstructor;
+required: true;
+};
+excerpt: {
+type: StringConstructor;
+required: true;
+};
+ctaLabel: {
+type: StringConstructor;
+default: string;
+};
+ctaVariant: {
+type: StringConstructor;
+default: string;
+};
+ctaColor: {
+type: StringConstructor;
+default: string;
+};
+rounded: {
+type: BooleanConstructor;
+default: boolean;
+};
+}>, {
+formatDate: (date: Date | string) => string;
+}, {}, {}, {}, ComponentOptionsMixin, ComponentOptionsMixin, "cta-click"[], "cta-click", PublicProps, Readonly<ExtractPropTypes<    {
+imageUrl: {
+type: StringConstructor;
+default: string;
+};
+imageAlt: {
+type: StringConstructor;
+default: string;
+};
+date: {
+type: (StringConstructor | DateConstructor)[];
+default: null;
+};
+title: {
+type: StringConstructor;
+required: true;
+};
+excerpt: {
+type: StringConstructor;
+required: true;
+};
+ctaLabel: {
+type: StringConstructor;
+default: string;
+};
+ctaVariant: {
+type: StringConstructor;
+default: string;
+};
+ctaColor: {
+type: StringConstructor;
+default: string;
+};
+rounded: {
+type: BooleanConstructor;
+default: boolean;
+};
+}>> & Readonly<{
+"onCta-click"?: ((...args: any[]) => any) | undefined;
+}>, {
+rounded: boolean;
+date: string | Date;
+imageUrl: string;
+imageAlt: string;
+ctaLabel: string;
+ctaVariant: string;
+ctaColor: string;
+}, {}, {
+MyButtonPureCss: DefineComponent<ExtractPropTypes<    {
+label: {
+type: StringConstructor;
+default: string;
+};
+variant: {
+type: PropType<ButtonVariant_2>;
+default: string;
+validator: (value: string) => boolean;
+};
+color: {
+type: PropType<ButtonColor_2>;
+default: string;
+validator: (value: string) => boolean;
+};
+size: {
+type: PropType<ButtonSize_2>;
+default: string;
+validator: (value: string) => boolean;
+};
+type: {
+type: PropType<"button" | "submit" | "reset">;
+default: string;
+};
+disabled: {
+type: BooleanConstructor;
+default: boolean;
+};
+loading: {
+type: BooleanConstructor;
+default: boolean;
+};
+startIcon: {
+type: StringConstructor;
+default: string;
+};
+endIcon: {
+type: StringConstructor;
+default: string;
+};
+className: {
+type: StringConstructor;
+default: string;
+};
+}>, {
+onClick: (event: MouseEvent) => void;
+}, {}, {}, {}, ComponentOptionsMixin, ComponentOptionsMixin, "click"[], "click", PublicProps, Readonly<ExtractPropTypes<    {
+label: {
+type: StringConstructor;
+default: string;
+};
+variant: {
+type: PropType<ButtonVariant_2>;
+default: string;
+validator: (value: string) => boolean;
+};
+color: {
+type: PropType<ButtonColor_2>;
+default: string;
+validator: (value: string) => boolean;
+};
+size: {
+type: PropType<ButtonSize_2>;
+default: string;
+validator: (value: string) => boolean;
+};
+type: {
+type: PropType<"button" | "submit" | "reset">;
+default: string;
+};
+disabled: {
+type: BooleanConstructor;
+default: boolean;
+};
+loading: {
+type: BooleanConstructor;
+default: boolean;
+};
+startIcon: {
+type: StringConstructor;
+default: string;
+};
+endIcon: {
+type: StringConstructor;
+default: string;
+};
+className: {
+type: StringConstructor;
+default: string;
+};
+}>> & Readonly<{
+onClick?: ((...args: any[]) => any) | undefined;
+}>, {
+label: string;
+type: "button" | "submit" | "reset";
+variant: ButtonVariant_2;
+color: ButtonColor_2;
+size: ButtonSize_2;
+disabled: boolean;
+loading: boolean;
+startIcon: string;
+endIcon: string;
+className: string;
+}, {}, {}, {}, string, ComponentProvideOptions, true, {}, any>;
 }, {}, string, ComponentProvideOptions, true, {}, any>;
 
 export declare const MyInputText: DefineComponent<ExtractPropTypes<    {

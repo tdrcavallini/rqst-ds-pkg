@@ -1,6 +1,6 @@
 {
     "name": "rqst-ds-pkg",
-    "version": "1.0.5",
+    "version": "1.0.6",
     "main": "rqst-design-system.umd.js",
     "module": "rqst-design-system.es.js",
     "types": "index.d.ts",

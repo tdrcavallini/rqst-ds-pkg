@@ -21704,7 +21704,7 @@ function Ub(e, n, t, a, l, i) {
         height: "200",
         cover: ""
       }, null, 8, ["src", "alt"])) : pt("", !0),
-      u(s, { class: "d-flex flex-column justify-space-between" }, {
+      u(s, null, {
         default: it(() => [
           at("div", null, [
             e.date ? (Le(), ht("span", Gb, dt(e.formatDate(e.date)), 1)) : pt("", !0),

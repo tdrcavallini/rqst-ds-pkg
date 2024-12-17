@@ -473,6 +473,60 @@ QBtn: ComponentConstructor<QBtn>;
 }, {}, string, ComponentProvideOptions, true, {}, any>;
 }, {}, string, ComponentProvideOptions, true, {}, any>;
 
+export declare const MyCardCompany: DefineComponent<ExtractPropTypes<    {
+company: {
+type: () => {
+symbol: string;
+name: string;
+exchange: string;
+currency: string;
+open: number;
+high: number;
+low: number;
+close: number;
+volume: number;
+};
+required: true;
+};
+variant: {
+type: () => "info" | "warning" | "success" | "error";
+default: string;
+};
+rounded: {
+type: BooleanConstructor;
+default: boolean;
+};
+}>, {
+variantClasses: ComputedRef<"bg-green-50 border-green-500" | "bg-yellow-50 border-yellow-500" | "bg-red-50 border-red-500" | "bg-blue-50 border-blue-500">;
+iconClasses: ComputedRef<"stroke-green-500" | "stroke-yellow-500" | "stroke-red-500" | "stroke-blue-500">;
+}, {}, {}, {}, ComponentOptionsMixin, ComponentOptionsMixin, {}, string, PublicProps, Readonly<ExtractPropTypes<    {
+company: {
+type: () => {
+symbol: string;
+name: string;
+exchange: string;
+currency: string;
+open: number;
+high: number;
+low: number;
+close: number;
+volume: number;
+};
+required: true;
+};
+variant: {
+type: () => "info" | "warning" | "success" | "error";
+default: string;
+};
+rounded: {
+type: BooleanConstructor;
+default: boolean;
+};
+}>> & Readonly<{}>, {
+variant: "success" | "error" | "warning" | "info";
+rounded: boolean;
+}, {}, {}, {}, string, ComponentProvideOptions, true, {}, any>;
+
 export declare const MyCardVuetify: DefineComponent<ExtractPropTypes<    {
 imageUrl: {
 type: StringConstructor;

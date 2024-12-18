@@ -21780,7 +21780,7 @@ const Yb = /* @__PURE__ */ Ot(jb, [["render", Ub]]), qb = Pt({
     });
     return { variantClasses: n, iconClasses: t };
   }
-}), Kb = { class: "flex items-center justify-between" }, Xb = { class: "flex items-center space-x-2" }, Qb = { class: "font-semibold text-3xl text-gray-800" }, Zb = { class: "text-sm flex space-x-6 pr-5" }, Jb = { class: "text-gray-500" }, eS = { class: "text-gray-500" }, tS = { class: "text-gray-500" };
+}), Kb = { class: "flex flex-col sm:flex-row items-start sm:items-center justify-between" }, Xb = { class: "flex items-center space-x-2" }, Qb = { class: "font-semibold text-3xl text-gray-800" }, Zb = { class: "text-sm flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-6 pt-2 sm:pt-0 w-full sm:w-auto" }, Jb = { class: "text-gray-500" }, eS = { class: "text-gray-500" }, tS = { class: "text-gray-500" };
 function nS(e, n, t, a, l, i) {
   return Me(), ct("div", {
     class: Tt(["shadow overflow-hidden border p-3", [e.variantClasses, { "rounded-lg": e.rounded, "rounded-none": !e.rounded }]])
